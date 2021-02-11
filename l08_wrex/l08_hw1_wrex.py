@@ -9,7 +9,7 @@ class Date:
 
     def __init__(self, dd_mm_yy):
         self.dd_mm_yy = self.is_date_ok(dd_mm_yy)
-        print(f'{dd_mm_yy} {Date.is_date_ok("11-02-2021")}')
+        print(f'{dd_mm_yy} {Date.is_date_ok(dd_mm_yy)}')
 
     @classmethod
     def digitize_date(cls, date):
@@ -33,7 +33,7 @@ print(date_from_class_method)
 print(Date.is_date_ok(date_from_class_method))
 
 # Work through the Object
-date_from_object = Date('21-12-1234')
+date_from_object = Date('12-34-5678')
 
 # Functionality
 print(f"11-02-2021 {Date.is_date_ok('11-02-2021')}")
