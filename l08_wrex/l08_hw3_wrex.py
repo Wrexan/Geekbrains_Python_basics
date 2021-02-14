@@ -12,7 +12,8 @@
 class NOT_A_NUMBER(Exception):
     @staticmethod
     def is_number(string):
-        return True if string.replace("-", "", 1).replace(".", "", 1).isdigit() else False
+        return True if string and (string[0] == "-" and string.replace("-", "", 1).replace(".", "", 1).isdigit()
+                                   or string.replace(".", "", 1).isdigit()) else False
 
 
 something = ""
