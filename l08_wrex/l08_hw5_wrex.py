@@ -16,7 +16,7 @@ class OEStock:
 
     params = ['id', 'units', 'assign']
 
-    data_file = "l05_hw7_text.pdb"
+    data_file = "l08_hw5_base.pdb"
 
     def __init__(self, inv):
         self.inv = inv
